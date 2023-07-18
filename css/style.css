@@ -1,0 +1,183 @@
+/* configuración de constantes */
+:root{
+    /* colores */
+    --colorEncabezado:#f3ebf5; 
+    --colorPie: #000000;
+    --colorVinculos: #0e0f0f;
+    --colorVinculosSobre: #133640;
+
+    /* Fuentes */
+    --textos: 'Roboto', sans-serif;
+    --titulos: 'Lato', sans-serif;
+
+}
+
+
+/* Utilizar el selector universal que es (*) */
+*{
+    box-sizing: border-box;
+
+}
+ /* Aplicar estilo a la clase .home-wrapper, no se puede escribir la palabra class*/ 
+
+ .home-wrapper{
+    /* Imagen de fondo */
+    background-image: url(/img/Fondo2.jpg);
+    /* Tamaño de la Imagen*/
+    background-size: cover;
+
+ }
+
+ /* Aplicar estilo al header que es un selector de etiquera en CSS*/
+
+ header{
+    /* Ancho*/
+    width: 100%;
+    /* Color de fondo*/
+    background-color: var(--colorEncabezado);
+    /* Posición del header fijo*/
+    position: fixed;
+    /* Espacios*/
+    padding: 10px 0;
+ }
+
+
+ /* Dimensionar tamaño del logo, combinar selectores de etiqueta CSS */
+ header img{
+    width: 100px;
+ }
+ 
+ /* Posicionar el menu de navegacion a la derecha */
+
+ header nav{
+    float: right;
+    /* Margen arriba */
+    margin-top: 50px;
+ }
+
+ /* Aplicar estilo a los vinculos */
+ header nav a {
+    color: var(--colorVinculos);
+    /* Quitar subrayado */
+    text-decoration: none;
+    margin-left: 8px;
+    font-family: var(--textos);
+    font-size: 1.2rem;
+
+ } 
+
+ /* Etilos a los enlaces en los estajdos sobre (hover)*/
+
+ header nav a:hover{
+   color:var(--colorVinculosSobre);
+   font-weight: bold;
+ }
+
+  /* Estilos para la sección promoción */
+  #promocion{
+   text-align: center;
+   padding: 250px 0 250px;
+  }
+
+  /* Estilos para el h1 de la sección promoción */
+  #promocion h1{
+    font-size: 2.5rem;
+    color: var(--colorEncabezado);
+    font-weight: bold;
+  }
+
+  /* Estilo al p de la sección promoción */
+
+#promocion p {
+     font-size: 1.5rem;
+     color: var(--colorEncabezado);
+     margin-top: 50px;
+     font-weight: 700;
+}
+
+/* Estilos a la clase container */
+.container {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+
+#Novedades .box{
+   display: inline-block;
+   width: 33%;
+   padding: 8px;
+}
+
+#Novedades .box img{
+   width: 100%;
+   height: 400px;
+}
+
+#Novedades .box h3{
+   text-align: center;
+}
+
+/* Sección Categoria */
+
+#Categoria .box{
+   display: inline-block;
+   width: 33%;
+   padding: 8px;
+}
+
+#Categoria .box img{
+   width: 100%;
+   height: 400px;
+}
+
+ 
+/* Estilos a las secciones */
+
+section{
+   padding: 100px 0;
+}
+
+section h2{
+   text-align: center;
+   font-size: 2.5rem;
+   margin-bottom: 30px;
+}
+
+/* Sección Contacto */
+
+#Contacto{
+   width: 100%;
+   text-align: center;
+   margin: 0 auto;
+   background-color: #72d2ec;
+   background-image: url(/img/FondoContacto.png);
+   background-size: cover;
+
+}
+
+#Contacto h2, label{
+   color: #000000;
+   width: 100%;
+}
+#Contacto input, textarea{
+   width: 600px;
+   border-radius: 10px;
+   padding: 10px 5px;
+}
+
+/* Footer */
+
+footer{
+   width: 100%;
+   padding: 20px 0;
+   color: #ffffff;
+   background-color: var(--colorPie);
+   text-align: center;
+}
+
+iframe{
+   width: 100% !important;
+   height: 600px !important;
+   margin: 0 auto;
+}
